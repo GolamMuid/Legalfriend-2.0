@@ -54,9 +54,11 @@ nav ul {
 
 nav ul li {
   margin: 0 12px;
+  color: #9f9f9f;
 }
 
-nav ul li a {
+nav ul li a,
+nav ul li a:visited {
   color: #9f9f9f;
   text-decoration: none;
   font-size: 18px;
@@ -128,7 +130,7 @@ marquee {
 }
 
 .right-bar img {
-  max-height: 70px;
+  max-height: 65px;
   margin: auto;
 }
 
