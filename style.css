@@ -187,6 +187,15 @@ body {
   margin: 10px 18px 10px 18px;
 }
 
+.section-title a:link,
+.section-title a:hover,
+.section-title a:active,
+.section-title a:visited {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .right {
   float: right;
 }
@@ -320,6 +329,15 @@ body {
 
 /* Article ends  */
 
+/* Article slider starts  */
+
+.article-slider {
+  width: 90%;
+  background-color: #f38020;
+  margin: auto;
+  display: none;
+}
+
 /* Video starts  */
 
 .video-container {
@@ -352,6 +370,17 @@ body {
 }
 
 /* Video ends  */
+
+/* Video Slider starts  */
+
+.video-slider {
+  width: 90%;
+  background-color: #08476c;
+  margin: auto;
+  display: none;
+}
+
+/* Video Slider ends  */
 
 /* Messages Starts  */
 
@@ -410,6 +439,13 @@ body {
   color: #006837;
   font-size: 18px;
   font-weight: 600;
+}
+
+.message-slider {
+  width: 90%;
+  margin: auto;
+  background-color: #00a99d;
+  display: none;
 }
 
 /* Message ends  */
@@ -597,6 +633,97 @@ footer {
   margin: auto;
 }
 
+/* Notification Detail ends  */
+
+/* Article Detail page  */
+
+.article-detail-body {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.main-article {
+  border-right: solid 1px gray;
+  margin-right: 6px;
+}
+
+/* .more-articles-sidebar {
+  border: solid;
+} */
+
+.main-article-author {
+  display: grid;
+  grid-template-columns: 1fr 10fr 2fr;
+}
+
+.main-article-author img {
+  max-height: 40px;
+  max-width: 40px;
+  border-radius: 50%;
+}
+
+.main-article-title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.main-article figure {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-article figcaption {
+  text-align: center;
+}
+
+.article-sidebar-title {
+  background-color: #d2d2d2;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 6px;
+}
+
+.sidebar-contents {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  max-height: 50px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-size: 18px;
+}
+
+.sidebar-contents img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/* Article Detail page ends  */
+
+/* About Us page starts  */
+
+/* About us page starts  */
+
+.about-us-body img {
+  float: left;
+  padding: 20px;
+}
+
+.about-us-body p {
+  text-align: justify;
+}
+
+.about-us-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.our-app {
+  height: 180px;
+}
+
 @media only screen and (max-width: 940px) {
   /* Navbar */
 
@@ -633,6 +760,8 @@ footer {
     color: #3c5084;
   }
 
+  /* Navbar ends  */
+
   .right-bar {
     display: none;
   }
@@ -640,6 +769,8 @@ footer {
   .body-container {
     width: 90%;
   }
+
+  /* notifaction advertise  */
 
   .notification-advertise-container {
     display: grid;
@@ -652,21 +783,26 @@ footer {
     margin: 10px 0px;
   }
 
+  /* notifaction advertise ends */
+
+  /* article starts  */
+
   .article-container {
     width: 90%;
+    display: none;
   }
 
-  .article-body {
-    display: grid;
-    grid-template-columns: 1fr;
+  .article-slider {
+    display: block;
   }
 
-  .article-body img {
-    width: 100%;
-  }
+  /* article ends  */
+
+  /* video starts  */
 
   .video-container {
     width: 90%;
+    display: none;
   }
 
   .video-body {
@@ -678,8 +814,17 @@ footer {
     height: auto;
   }
 
+  .video-slider {
+    display: block;
+  }
+
+  /* video ends  */
+
+  /* message starts  */
+
   .message-container {
     width: 90%;
+    display: none;
   }
 
   .message-body {
@@ -691,12 +836,19 @@ footer {
     margin-bottom: 20px;
   }
 
+  .message-slider {
+    display: block;
+  }
+
+  /* message ends  */
+
   footer {
     width: 100%;
   }
 
   .footer-top {
     grid-template-columns: 1fr;
+    width: 100%;
   }
 
   .privacy-policy {
@@ -732,4 +884,25 @@ footer {
     grid-template-columns: 20% 80%;
     height: fit-content;
   }
+
+  /* Message Article page ends  */
+
+  /* Article-detail-page  */
+
+  .article-detail-body {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .main-article {
+    border: none;
+  }
+
+  .more-articles-sidebar {
+    max-height: 300px;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  /* Article detail page ends  */
 }
