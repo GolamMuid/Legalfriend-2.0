@@ -59,6 +59,7 @@ nav ul li a {
   font-size: 18px;
   font-weight: 700;
   transition: all 0.3s ease;
+  overflow-y: auto;
 }
 
 nav ul li a:hover,
@@ -71,6 +72,24 @@ nav .menu-btn i {
   cursor: pointer;
   display: none;
 }
+
+.dropdown {
+  flex-direction: column;
+  overflow: visible;
+  position: absolute;
+  visibility: hidden;
+}
+
+.dropdown li {
+  line-height: 1.5;
+  background-color: white;
+  padding: 4px;
+}
+
+.calender:hover > .dropdown {
+  visibility: visible;
+}
+
 #click {
   display: none;
 }
@@ -723,6 +742,32 @@ footer {
 .our-app {
   height: 180px;
 }
+
+/* About us page ends   */
+
+/* Calender Page Starts  */
+
+.calender-page-body {
+  border: solid;
+  min-height: 100vh;
+}
+
+.calender-page-body li {
+  list-style: none;
+  padding: 6px;
+  font-size: 18px;
+}
+
+.calender-page-body li a:hover,
+.calender-page-body li a:active,
+.calender-page-body li a:link,
+.calender-page-body li a:visited {
+  color: #006837;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Calender Page Ends  */
 
 @media only screen and (max-width: 940px) {
   /* Navbar */
